@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.FormsAluno</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ProjetoPrincipal.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+
+    
+     
+            <br>
+            <br>
+        
+            <h6>Nome</h6>
+            <input type="text" id="nomeAluno" class="form-control" placeholder="Digite o nome">
+            <BR>
+
+            <h6>CPF</h6>
+            <input type="text" id="cpfAluno" class="form-control" placeholder="Digite o CPF">
+            <BR>
+
+            <h6>Nascimento</h6>
+            <input type="text" id="nomeAluno" class="form-control" placeholder="DD/MM/YY">
+            <BR>
+
+             <form action="#">
+               <label for="lang"<h6>Sexo</h6></label><br>
+                 <select name="sexo">
+                  <option value="0">Masculino</option>
+                  <option value="1">Feminino</option>
+                 </select>
+              </form>
+              <br>
+
+    <script>
+        
+        function confirmarVoltar(event) {
+            if (!confirm("Tem certeza que deseja voltar sem concluir a operação?")) {
+                event.preventDefault(); 
+            }
+            else {
+               
+                window.location.href = "/"; 
+            }
+        }
+    </script>
+
+
+    <button type="button" class="btn btn-primary">Salvar</button>
+    <button type="button" onclick="confirmarVoltar(event)" class="btn btn-danger">Voltar</button></>
+   
+
+    <div class="container">
+        <main role="main" class="pb-3">
+    </main>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+   
+</body>
+</html>
